@@ -1,0 +1,41 @@
+titel: Marie-Claire Toussaint
+beschreibung: Beschreibung der Webseite
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: "Europe/Berlin" # important for dates
+
+# Build settings
+markdown: kramdown
+theme: custom-theme
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-paginate
+
+# Jekyll Assets
+assets:
+  sources:
+    - _custom-theme/assets
+  autoprefixer:
+    browsers:
+    - "last 3 versions"
+    - "IE > 9"
+  plugins:
+    img:
+      # optim: false # To deactivate automatic optimization
+      optim:
+        {}
+
+# Exclude from processing.
+exclude:
+  # Default:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # Custom:
+  - .gitignore
+  - .jekyll-metadata
