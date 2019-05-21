@@ -6,20 +6,7 @@
 */
 
 /* NAVIGATION */
-.nav-spacer {
-  height: 83px;
-  @media(min-width: 620px) {
-    height: 103px;
-  }
-}
-
 body>nav {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-
-  /* height: 80px; */
   background-color: white;
 
   .content {
@@ -57,6 +44,8 @@ body>nav {
 
   ul {
     display: none;
+    transition: all .3s;
+
     // Desktop styles:
     @media(min-width: 620px) {
       list-style: none;
@@ -70,14 +59,13 @@ body>nav {
     @media(max-width: 619px) {
       ul {
         display: block;
-        position: absolute;
-        top: 68px;
+        position: fixed;
+        top: 63px;
         right: 0;
-        text-align: right;
+        left: 0;
+        bottom: 0;
+        text-align: center;
         background-color: white;
-        padding: 15px;
-        width: 221px;
-        box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
       }
     }
   }
@@ -92,11 +80,6 @@ body>nav {
       font-weight: 700;
 
       margin: 0 10px;
-
-      &:last-of-type {
-        margin-left: 10px;
-        font-weight: 400;
-      }
     }
   }
 
@@ -110,18 +93,13 @@ body>nav {
     align-items: flex-end;
   }
 
+  // Customize hamburger:
   .hamburger {
     display: block;
-    text-align: center;
-    cursor: pointer;
+    outline: none;
+    padding: 5px;
 
-    .line {
-      height: 3px;
-      width: 27px;
-      background-color: #555;
-      margin: 4px auto;
-    }
-
+    // Hide hamburger on mobile
     @media(min-width: 620px) {
       display: none;
     }

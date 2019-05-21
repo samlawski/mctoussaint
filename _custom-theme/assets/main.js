@@ -16,6 +16,7 @@
 // Nagivation
 $('.hamburger').click(function(){
   $(this).parent('.menu').toggleClass('open')
+  $(this).toggleClass('is-active')
 })
 
 // Cookie Banner
