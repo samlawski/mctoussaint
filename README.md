@@ -24,8 +24,4 @@
 
 ## To do:
 
-- Change link hover to color change, add transition and remove text decoration
-
-### Later:
-
 - Add fade transition for hamburger menu on mobile

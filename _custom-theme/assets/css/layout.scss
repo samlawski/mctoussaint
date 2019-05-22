@@ -123,6 +123,10 @@
   h1, h2 {
     text-align: center;
   }
+  h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
   h2 {
     font-size: 1rem;
   }
@@ -132,7 +136,7 @@
 
 .site-wrapper>footer {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0 20px;
 
   .social {
     font-size: 2rem;

@@ -33,19 +33,19 @@ img {
 a {
   text-decoration: none;
   color: $clr-primary;
-  transition: text-decoration .3s;
+  transition: all .3s;
 
   &:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    color: $clr-primary--lt1;
   }
 }
 b, strong { font-weight: $font-weight-bld; }
 small { font-size: 0.7rem; }
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: $font-weight-bld;
   line-height: 1.1;
-  text-transform: uppercase;
 
   @media(max-width: 1000px) {
     font-size: 3rem;
