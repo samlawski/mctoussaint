@@ -64,6 +64,8 @@
     // Dropdown menu open:
     @media(max-width: 619px) {
       ul {
+        z-index: 99;
+
         display: block;
         position: fixed;
         top: 63px;
@@ -126,6 +128,9 @@
   h1 {
     text-transform: uppercase;
     font-size: 4rem;
+    @media(max-width: 800px) {
+      font-size: 2.6rem;
+    }
   }
   h2 {
     font-size: 1rem;
