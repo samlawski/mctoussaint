@@ -131,8 +131,20 @@
 /* FOOTER */
 
 .site-wrapper>footer {
-  font-size: 0.7rem;
   text-align: center;
-  padding: 10px;
-  border-top: 1px solid #222;
+  margin-top: 50px;
+
+  .social {
+    font-size: 2rem;
+    i { padding: 0 5px; }
+  }
+  .legal {
+    margin-top: 30px;
+    font-size: .7rem;
+  }
+
+  // font-size: 0.7rem;
+  // text-align: center;
+  // padding: 10px;
+  // border-top: 1px solid #222;
 }
