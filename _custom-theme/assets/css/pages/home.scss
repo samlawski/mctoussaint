@@ -5,6 +5,14 @@
 */
 
 [data-page="home"] {
-  /* HEADER */
-  
+  .media__slide {
+    position: relative;
+  }
+  .slide__cta {
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    bottom: 25%;
+  }
 }
