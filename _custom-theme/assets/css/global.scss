@@ -17,6 +17,15 @@ body {
   font-weight: $font-weight;
   line-height: 1.5;
   color: #222;
+
+  background-color: $clr-bg;
+}
+
+img {
+  max-width: 100%;
+
+  &.img-stretched { width: 100%; }
+  &.img-centered { margin: auto; }
 }
 
 // Typography
