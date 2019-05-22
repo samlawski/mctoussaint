@@ -12,8 +12,9 @@
 
 * { box-sizing: border-box; }
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: $font;
   font-size: 14px;
+  font-weight: $font-weight;
   line-height: 1.5;
   color: #222;
 }
@@ -29,12 +30,13 @@ a {
     text-decoration: underline;
   }
 }
-b, strong { font-weight: 700; }
+b, strong { font-weight: $font-weight-bld; }
 small { font-size: 0.7rem; }
 h1 {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: $font-weight-bld;
   line-height: 1.1;
+  text-transform: uppercase;
 
   @media(max-width: 1000px) {
     font-size: 3rem;
@@ -45,7 +47,7 @@ h1 {
 }
 h2 {
   font-size: 2.6rem;
-  font-weight: 100;
+  font-weight: $font-weight-lt;
   margin-bottom: 30px;
 
   @media(max-width: 1000px) {
@@ -57,9 +59,9 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: $font-weight-bld;
 }
-h4, h5, h6 { font-weight: 700; }
+h4, h5, h6 { font-weight: $font-weight-bld; }
 
 // Forms
 
@@ -71,7 +73,7 @@ textarea {
   outline: none;
 
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: $font;
 
   transition: border-color .3s;
 
@@ -86,7 +88,7 @@ textarea {
 // [type="submit"],
 // button {
 //   font-size: 14px;
-//   font-family: 'Open Sans', Helvetica, sans-serif;
+//   font-family: $font;
 //   border: none;
 //   outline: none;
 //   cursor: pointer;

@@ -21,3 +21,11 @@
 
 - Carousel 1: https://kenwheeler.github.io/slick/
 - Carousel 2: https://owlcarousel2.github.io/OwlCarousel2/index.html
+
+## To do:
+
+- Change link hover to color change, add transition and remove text decoration
+
+### Later:
+
+- Add fade transition for hamburger menu on mobile

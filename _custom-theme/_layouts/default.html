@@ -9,7 +9,9 @@
   </head>
   <body data-page="{{ page.style_id }}">
 
-    {{ content }}
+    <div class="site-wrapper">
+      {{ content }}
+    </div>
 
     {% include javascripts.html %}
     {% asset main.js %}

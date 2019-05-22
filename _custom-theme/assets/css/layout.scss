@@ -1,12 +1,18 @@
 /*
 
 - Navigation
+- Header
 - Footer
 
 */
 
+.site-wrapper {
+  margin: auto;
+  max-width: $site-width-max;
+}
+
 /* NAVIGATION */
-body>nav {
+.site-wrapper>nav {
   background-color: white;
 
   .content {
@@ -27,7 +33,7 @@ body>nav {
 
     padding: 10px;
     @media(min-width: 620px) {
-      padding: 20px 10px;
+      padding: 30px 10px;
     }
   }
 
@@ -77,10 +83,15 @@ body>nav {
       padding: 0;
 
       display: inline-block;
-      font-weight: 700;
+      font-weight: $font-weight-bld;
 
       margin: 0 10px;
     }
+  }
+
+  a {
+    font-weight: $font-weight;
+    text-transform: uppercase;
   }
 
   .menu {
@@ -106,9 +117,20 @@ body>nav {
   }
 }
 
+/* HEADER */
+
+.site-wrapper>header {
+  h1, h2 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
 /* FOOTER */
 
-body>footer {
+.site-wrapper>footer {
   font-size: 0.7rem;
   text-align: center;
   padding: 10px;
