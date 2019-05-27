@@ -1,9 +1,6 @@
 ---
 layout: page
 style_id: impressum
-titel: Impressum
-permalink: "/impressum/"
-
 ---
 # Impressum
 
