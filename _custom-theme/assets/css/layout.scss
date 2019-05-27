@@ -80,7 +80,9 @@
 
   li {
     padding: 5px;
+    flex-shrink: 0;
 
+    /* Desktop */
     @media(min-width: 620px) {
       padding: 0;
 
