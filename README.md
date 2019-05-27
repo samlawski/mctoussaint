@@ -25,3 +25,6 @@
 ## To do:
 
 - Add fade transition for hamburger menu on mobile
+- Add iTunes link to the music page
+- add audio file upload to reference page (as well as vita, portrait and list)
+- Music page: Frontmatter list of soundcloud links, spotify playlists, iTunes? youTube?
