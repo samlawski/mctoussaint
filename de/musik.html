@@ -2,8 +2,26 @@
 style_id: music
 layout: page_de
 titel: Musik
+deezer_playlist_id: 30595446
+spotify_uri: spotify:album:1DFixLWuPkv3KT3TnV35m3
+itunes_link: "https://embed.music.apple.com/us/album/rocketman-music-from-the-motion-picture/1460664692?app=music"
 ---
 
 <section class="content">
   <h2>Musik</h2>
+
+  <div class="musicframes">
+    {% assign spotify_path = page.spotify_uri | replace: ":", "/" | remove_first: "spotify/" %}
+    <iframe src="https://open.spotify.com/embed/{{ spotify_path }}" width="280" height="360" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    <div class=""></div>
+
+    <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=ff0000&layout=dark&size=medium&type=playlist&id=30595446&app_id=1" width="300" height="300"></iframe>
+
+    <div>
+      <a href="https://music.apple.com/us/artist/red-hot-chili-peppers/889780?mt=1&app=music" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=&kind=artist&bubble=apple_music) no-repeat;width:158px;height:45px;"></a>
+    </div>
+
+  </div>
+
 </section>

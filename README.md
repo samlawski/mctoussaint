@@ -29,3 +29,12 @@
 - Add iTunes link to the music page
 - add audio file upload to reference page (as well as vita, portrait and list)
 - Music page: Frontmatter list of soundcloud links, spotify playlists, iTunes? youTube?
+
+## Dev links
+
+Player dimensions: 280*360
+
+- Deezer player https://developers.deezer.com/musicplugins/player
+- Spotify player: https://developer.spotify.com/documentation/widgets/generate/play-button/
+- iTunes player: https://tools.applemusic.com/en-us?country=us&media=all
+- iTunes link: https://linkmaker.itunes.apple.com/en-us/details/889780?country=us&mediaType=apple_music&term=red+hot+chilly&type=artist
