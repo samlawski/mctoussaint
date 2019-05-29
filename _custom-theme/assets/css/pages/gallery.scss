@@ -1,0 +1,16 @@
+[data-page="gallery"] {
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 -10px; // same as img margin
+
+    img {
+      height: 230px;
+      margin: 10px;
+    }
+  }
+
+}

@@ -6,4 +6,10 @@ titel: Galerie
 
 <section class="content">
   <h2>Galerie</h2>
+
+  <div class="gallery">
+    {% for img in site.data.galerie %}
+      <img src="{{ img.galerie_img }}" alt="Galerie Bild {{ forloop.index }}">
+    {% endfor %}
+  </div>
 </section>
