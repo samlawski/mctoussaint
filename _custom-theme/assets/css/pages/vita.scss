@@ -1,0 +1,27 @@
+[data-page="vita"] {
+
+  .vita {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media(min-width: 800px){
+      flex-direction: row;
+    }
+  }
+
+  .vita__text {
+    flex: 1 1;
+  }
+
+  .vita__portrait {
+    margin-bottom: 20px;
+
+    @media(min-width: 800px){
+      flex: 0 0;
+      flex-basis: 300px;
+      margin-left: 10px;
+    }
+  }
+
+  p {margin-bottom: 20px;}
+}
