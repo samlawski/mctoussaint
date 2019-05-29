@@ -1,0 +1,26 @@
+---
+style_id: contact
+layout: page
+titel: Contact
+---
+
+<section class="content">
+  <h2>Contakt</h2>
+  <form class="" action="index.html" method="post">
+    <label for="name">name*</label>
+    <input type="text" name="name" value="" placeholder="Jane Doe" required>
+    <label for="email">email*</label>
+    <input type="email" name="email" value="" placeholder="john@doe.com" required>
+
+    <input type="text" name="datum" value="" placeholder="Datum">
+    <label for="nachricht">message*</label>
+
+    <textarea name="nachricht" placeholder="Nachricht ..." required></textarea>
+    <label class="gdpr_check" for="gdpr_check">
+      <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
+      <small>By using this form, you consent to the storage and processing of your data by this website and to their transfer to the service provider Netlify.</small>
+    </label>
+
+    <input type="submit" name="senden" value="Send">
+  </form>
+</section>

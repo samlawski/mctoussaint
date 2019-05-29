@@ -1,0 +1,26 @@
+---
+style_id: contact
+layout: page_de
+titel: Kontakt
+---
+
+<section class="content">
+  <h2>Kontakt</h2>
+  <form class="" action="index.html" method="post">
+    <label for="name">Name*</label>
+    <input type="text" name="name" value="" placeholder="Max Mustermann" required>
+    <label for="email">Email*</label>
+    <input type="email" name="email" value="" placeholder="miranda@musterfrau.de" required>
+
+    <input type="text" name="datum" value="" placeholder="Datum">
+    <label for="nachricht">Nachricht*</label>
+
+    <textarea name="nachricht" placeholder="Nachricht ..." required></textarea>
+    <label class="gdpr_check" for="gdpr_check">
+      <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
+      <small>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Webseite und der Weiterleitung an den Servicedienstleister Netlify einverstanden.</small>
+    </label>
+
+    <input type="submit" name="senden" value="Nachricht Senden">
+  </form>
+</section>
