@@ -1,3 +1,33 @@
+// Nagivation
+$('.hamburger').click(function(){
+  $(this).parent('.menu').toggleClass('open')
+  $(this).toggleClass('is-active')
+})
+
+// YouTube video on home page
+
+var $youtubeCta = $('.media__slide').find('a[href*="youtube.com"]')
+var $youtubeCtaShort = $('.media__slide').find('a[href*="youtu.be"]')
+var youtubeCode
+
+if($youtubeCta.length > 0){
+  youtubeCode = $youtubeCta.attr('href').split('v=').reverse()[0]
+}else if($youtubeCtaShort.length > 0){
+  youtubeCode = $youtubeCtaShort.attr('href').split('/').reverse()[0]
+}
+
+if(youtubeCode){
+  var iframe = '<div class="embed-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/' + youtubeCode + '?rel=0&amp;showinfo=0;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+
+  $('.media__slide a').click(function(e){
+    e.preventDefault()
+    $(this).closest('.media__slide').html(iframe)
+  })
+}
+
+
+
+
 // Smooth Scroll Anchor Links
 // $(document).on('click', 'a[href^="#"]', function (event) {
 //   event.preventDefault()
@@ -12,12 +42,6 @@
 // $('a[data-target]').click(function(){
 //   $($(this).data('target')).toggleClass('open')
 // })
-
-// Nagivation
-$('.hamburger').click(function(){
-  $(this).parent('.menu').toggleClass('open')
-  $(this).toggleClass('is-active')
-})
 
 // Cookie Banner
 // var cookieBanner = (function(){
