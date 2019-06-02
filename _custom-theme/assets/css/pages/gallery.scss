@@ -1,15 +1,19 @@
 [data-page="gallery"] {
 
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    img { margin: 5px 0; }
 
-    margin: 0 -10px; // same as img margin
+    @media(min-width: 500px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-    img {
-      height: 260px;
-      margin: 10px;
+      margin: 0 -10px; // same as img margin
+
+      img {
+        height: 260px;
+        margin: 10px;
+      }
     }
   }
 
