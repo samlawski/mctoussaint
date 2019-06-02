@@ -2,8 +2,65 @@
 style_id: vita
 layout: page_de
 titel: Vita
+referenzen:
+  - jahr: 2019
+    titel: Jingle Produktion für Siemens
+    audio_file: /media/uploads/audio-demo.mp3
+  - jahr: 2019
+    titel: Hochzeit
+    audio_file:
+  - jahr: 2017
+    titel: Jingle für Mercedes
+    audio_file: /media/uploads/audio-demo.mp3
+  - jahr: 2016
+    titel: Noch ein Event
+    audio_file:
+  - jahr: 2016
+    titel: So viele Events
+    audio_file:
+  - jahr: 2014
+    titel: Und ein weiteres Event
+    audio_file:
+  - jahr: 2012
+    titel: Ein letztes Audiobeispiel 
+    audio_file: /media/uploads/audio-demo.mp3
 ---
 
 <section class="content">
   <h2>Vita</h2>
+
+  <div class="vita">
+    <div class="vita__portrait">
+      <img src="/media/uploads/portrait.jpeg" alt="portrait" class="editable">
+    </div>
+
+    <div class="vita__text">
+      <div class="editable">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla neque id augue convallis, eu suscipit ex sollicitudin.</p>
+        <p>Pellentesque sed ullamcorper sapien. <b>Nulla auctor</b> accumsan efficitur. Maecenas a mi a mauris varius bibendum at ut mi. Donec lacinia accumsan est, quis lobortis nunc consequat at. Maecenas commodo dui massa, aliquet placerat nibh venenatis nec. Donec eget fermentum velit. Mauris et nisl et erat finibus molestie quis nec augue. Vestibulum sagittis commodo augue ut tristique. Nulla sit amet felis vitae urna luctus commodo nec nec nisl. Praesent enim tellus, scelerisque malesuada gravida id, vestibulum vitae sapien. Morbi ut finibus mi. Etiam in magna vitae ligula interdum semper. Etiam ut enim quis risus vulputate interdum.</p>
+      </div>
+
+      <div class="references">
+        <h3>Referenzen</h3>
+
+        <ul>
+          {% for referenz in page.referenzen %}
+            <li>
+              <strong>{{ referenz.jahr }}</strong>&nbsp;
+              <span>{{ referenz.titel }}</span>&nbsp;
+              {% if referenz.audio_file %}
+                <span class="referenz__audio">
+                  <audio><source class="referenz__audio--{{ forloop.index }}" src="{{ referenz.audio_file }}" type="audio/mpeg"></audio>
+                  <i class="referenz__audio__btn far fa-play-circle"></i>
+                </span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
 </section>
