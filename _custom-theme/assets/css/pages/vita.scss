@@ -26,4 +26,10 @@
   }
 
   p {margin-bottom: 20px;}
+
+  .referenz__audio {
+    cursor: pointer;
+
+    &:hover { color: $clr-primary--lt1; }
+  }
 }

@@ -4,8 +4,8 @@ $('.hamburger').click(function(){
   $(this).toggleClass('is-active')
 })
 
-// YouTube video on home page
 
+// YouTube video on home page
 var $youtubeCta = $('.media__slide').find('a[href*="youtube.com"]')
 var $youtubeCtaShort = $('.media__slide').find('a[href*="youtu.be"]')
 var youtubeCode
@@ -25,6 +25,26 @@ if(youtubeCode){
   })
 }
 
+
+// Reference audio
+$('.referenz__audio').each(function(e){
+  var $audio = $(this).find('audio')
+  var $btn = $(this).find('.referenz__audio__btn')
+
+  $btn.click(function(){
+    if($(this).hasClass('fa-play-circle')){
+      // Play:
+      $audio.trigger('play')
+      $(this).removeClass('fa-play-circle')
+      $(this).addClass('fa-pause-circle')
+    }else{
+      // Pause:
+      $audio.trigger('pause')
+      $(this).removeClass('fa-pause-circle')
+      $(this).addClass('fa-play-circle')
+    }
+  })
+})
 
 
 

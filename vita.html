@@ -2,6 +2,28 @@
 style_id: vita
 layout: page
 titel: Vita
+referenzen:
+  - jahr: 2019
+    titel: Jingle Production for Siemens
+    audio_file: /media/uploads/audio-demo.mp3
+  - jahr: 2019
+    titel: Wedding Event
+    audio_file:
+  - jahr: 2017
+    titel: Jingle for Mercedes
+    audio_file:
+  - jahr: 2016
+    titel: Another Event
+    audio_file: /media/uploads/audio-demo.mp3
+  - jahr: 2016
+    titel: So may events
+    audio_file:
+  - jahr: 2014
+    titel: This is also an event
+    audio_file:
+  - jahr: 2012
+    titel: A last audio example Jingle for Mercedes
+    audio_file: /media/uploads/audio-demo.mp3
 ---
 
 <section class="content">
@@ -22,13 +44,18 @@ titel: Vita
         <h3>References</h3>
 
         <ul>
-          <li><strong>2019</strong> Jingle Production for Siemens <i class="far fa-play-circle"></i></li>
-          <li><strong>2019</strong> Wedding Event</li>
-          <li><strong>2017</strong> Jingle for Mercedes <i class="far fa-play-circle"></i></li>
-          <li><strong>2016</strong> Another Event</li>
-          <li><strong>2016</strong> So may events</li>
-          <li><strong>2014</strong> This is also an event</li>
-          <li><strong>2012</strong> A last audio example Jingle for Mercedes <i class="far fa-play-circle"></i></li>
+          {% for referenz in page.referenzen %}
+            <li>
+              <strong>{{ referenz.jahr }}</strong>&nbsp;
+              <span>{{ referenz.titel }}</span>&nbsp;
+              {% if referenz.audio_file %}
+                <span class="referenz__audio">
+                  <audio><source class="referenz__audio--{{ forloop.index }}" src="{{ referenz.audio_file }}" type="audio/mpeg"></audio>
+                  <i class="referenz__audio__btn far fa-play-circle"></i>
+                </span>
+              {% endif %}
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
