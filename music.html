@@ -11,15 +11,15 @@ itunes_link: "https://embed.music.apple.com/us/album/rocketman-music-from-the-mo
   <h2>Music</h2>
 
   <div class="musicframes">
-    <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ page.itunes_link }}"></iframe>
+    <div class="">
+      <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ page.itunes_link }}"></iframe>
+    </div>
 
     <a href="https://www.deezer.com/en/artist/743" target="_blank"><img src="/media/layout/deezer-logo.png" height="45" alt="Deezer Logo"></a>
-
-    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:4J4o73Oun7v0XXRjN8DPif&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:4J4o73Oun7v0XXRjN8DPif&size=detail&theme=light" width="280" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 
     <!-- {% assign spotify_path = page.spotify_uri | replace: ":", "/" | remove_first: "spotify/" %}
     <iframe src="https://open.spotify.com/embed/{{ spotify_path }}" width="280" height="360" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-
     <!-- <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=280&height=360&color=ff0000&layout=dark&size=medium&type=playlist&id={{ page.deezer_playlist_id }}&app_id=1" width="280" height="360"></iframe> -->
   </div>
 

@@ -1,5 +1,5 @@
 ---
-layout: page_de
+layout: md_page_de
 style_id: impressum
 titel: Datenschutz
 ---
