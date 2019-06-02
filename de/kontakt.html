@@ -7,20 +7,33 @@ titel: Kontakt
 <section class="content">
   <h2>Kontakt</h2>
   <form class="" action="index.html" method="post">
-    <label for="name">Name*</label>
+    <label for="name">Name:</label>
     <input type="text" name="name" value="" placeholder="Max Mustermann" required>
-    <label for="email">Email*</label>
-    <input type="email" name="email" value="" placeholder="miranda@musterfrau.de" required>
+    <label for="email">Email:</label>
+    <input type="email" name="email" value="" placeholder="Maxim@musterfrau.com" required>
 
-    <input type="text" name="datum" value="" placeholder="Datum">
-    <label for="nachricht">Nachricht*</label>
-
-    <textarea name="nachricht" placeholder="Nachricht ..." required></textarea>
-    <label class="gdpr_check" for="gdpr_check">
-      <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
-      <small>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Webseite und der Weiterleitung an den Servicedienstleister Netlify einverstanden.</small>
+    <label for="booking">
+      <input type="checkbox" id="booking" name="booking" value="">
+      <span class="editable">Ich möchte ein Event buchen.</span>
     </label>
 
-    <input type="submit" name="senden" value="Nachricht Senden">
+    <div class="formgroup booking__date">
+      <label for="datum">Datum (optional):</label>
+      <input type="date" name="datum" value="">
+    </div>
+
+    <div class="formgroup">
+      <label for="nachricht">Nachricht:</label>
+      <textarea name="nachricht" placeholder="Nachricht ..." required></textarea>
+    </div>
+
+    <label class="gdpr_check" for="gdpr_check">
+      <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
+      <small>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Webseite und der Weiterleitung an meinen Servicedienstleister einverstanden.</small>
+    </label>
+
+    <div class="formgroup">
+      <input type="submit" name="senden" value="Absenden">
+    </div>
   </form>
 </section>

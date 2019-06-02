@@ -7,20 +7,33 @@ titel: Contact
 <section class="content">
   <h2>Contact</h2>
   <form class="" action="index.html" method="post">
-    <label for="name">name*</label>
+    <label for="name">name:</label>
     <input type="text" name="name" value="" placeholder="Jane Doe" required>
-    <label for="email">email*</label>
+    <label for="email">email:</label>
     <input type="email" name="email" value="" placeholder="john@doe.com" required>
 
-    <input type="text" name="datum" value="" placeholder="Datum">
-    <label for="nachricht">message*</label>
+    <label for="booking">
+      <input type="checkbox" id="booking" name="booking" value="">
+      I'd like to request a booking
+    </label>
 
-    <textarea name="nachricht" placeholder="Nachricht ..." required></textarea>
+    <div class="formgroup booking__date">
+      <label for="datum">date (optional):</label>
+      <input type="date" name="datum" value="" placeholder="date">
+    </div>
+
+    <div class="formgroup">
+      <label for="nachricht">message:</label>
+      <textarea name="nachricht" placeholder="message ..." required></textarea>
+    </div>
+
     <label class="gdpr_check" for="gdpr_check">
       <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
       <small>By using this form, you consent to the storage and processing of your data by this website and to their transfer to the service provider Netlify.</small>
     </label>
 
-    <input type="submit" name="senden" value="Send">
+    <div class="formgroup">
+      <input type="submit" name="senden" value="Send">
+    </div>
   </form>
 </section>

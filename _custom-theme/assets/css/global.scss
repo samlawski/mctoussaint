@@ -77,7 +77,8 @@ h4, h5, h6 { font-weight: $font-weight-bld; }
 input,
 textarea {
   background-color: transparent;
-  border: 1px solid rgba(0,0,0,0.7);
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.7);
   padding: 8px;
   outline: none;
 
@@ -88,7 +89,7 @@ textarea {
 
   &:active,
   &:focus {
-    border-color: $clr-primary;
+    border-color: $clr-primary--lt1;
   }
 }
 
@@ -115,22 +116,23 @@ textarea {
   }
 }
 
-// [type="submit"],
-// button {
-//   font-size: 14px;
-//   font-family: $font;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-//   padding: 8px;
-//
-//   background-color: $clr-primary;
-//   transition: background-color .3s;
-//
-//   &:hover {
-//     background-color: $clr-primary--lt1;
-//   }
-// }
+[type="submit"],
+button {
+  font-size: 14px;
+  font-family: $font;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+
+  background-color: transparent;
+  border: 1px solid $clr-black;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+}
 
 // Helper Classes
 

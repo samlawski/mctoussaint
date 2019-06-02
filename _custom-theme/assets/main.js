@@ -47,6 +47,11 @@ $('.referenz__audio').each(function(e){
 })
 
 
+// Toggle booking calendar
+$('#booking').click(function(){
+  $('.booking__date').toggleClass('open')
+})
+
 
 // Smooth Scroll Anchor Links
 // $(document).on('click', 'a[href^="#"]', function (event) {

@@ -1,3 +1,33 @@
 [data-page="contact"] {
 
+  form {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .formgroup {
+    margin-top: 25px;
+  }
+
+  .booking__date {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+
+    &.open {
+      height: 72px; // set height for transition
+    }
+  }
+
 }
