@@ -1,13 +1,19 @@
 ---
+_options:
+  layout:
+    hidden: true
+  style_id:
+    hidden: true
 layout: page
 style_id: 404
+titel: 404
 ---
 
 <main>
-  <h1>404</h1>
+  <h1>{{ page.titel }}</h1>
 
-  <p><strong>Diese Seite gibt es leider nicht.</strong></p>
+  <p><strong class="editable">Diese Seite gibt es leider nicht.</strong></p>
   <ul>
-    <li><a href="/">Zur Startseite</a></li>
+    <li><a class="editable" href="/">Zur Startseite</a></li>
   </ul>
 </main>

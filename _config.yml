@@ -4,18 +4,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: "Europe/Berlin" # important for dates
 
-defaults:
-  - scope:
-      path: ''
-      type: ''
-    values:
-      _options:
-        layout:
-          hidden: true
-        style_id:
-          hidden: true
-
-
 # Build settings
 markdown: kramdown
 theme: custom-theme
