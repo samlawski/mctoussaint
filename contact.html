@@ -1,11 +1,18 @@
 ---
+_options:
+  layout:
+    hidden: true
+  style_id:
+    hidden: true
+_comments:
+  titel: Erscheint im Browser-Tab und für SEO
 style_id: contact
 layout: page
 titel: Contact
 ---
 
 <section class="content">
-  <h2>Contact</h2>
+  <h2>{{ page.titel }}</h2>
   <form class="" action="index.html" method="post">
     <label for="name">name:</label>
     <input type="text" name="name" value="" placeholder="Jane Doe" required>
@@ -14,7 +21,7 @@ titel: Contact
 
     <label for="booking">
       <input type="checkbox" id="booking" name="booking" value="">
-      I'd like to request a booking
+      <span class="editable">I'd like to request a booking</span>
     </label>
 
     <div class="formgroup booking__date">
@@ -29,8 +36,12 @@ titel: Contact
 
     <label class="gdpr_check" for="gdpr_check">
       <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
-      <small>By using this form, you consent to the storage and processing of your data by this website and to their transfer to the service provider Netlify.</small>
+      <small class="editable">By using this form, you consent to the storage and processing of your data by this website and to their transfer to the service provider Netlify.</small>
     </label>
+
+    <input type="hidden" name="_subject" value="Webseite Kontaktformular">
+    <input type="hidden" name="_to" value="mail@samuelboguslawski.com">
+    <input type="text" name="_gotcha" style="display: none;">
 
     <div class="formgroup">
       <input type="submit" name="senden" value="Send">

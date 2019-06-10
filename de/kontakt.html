@@ -1,11 +1,18 @@
 ---
+_options:
+  layout:
+    hidden: true
+  style_id:
+    hidden: true
+_comments:
+  titel: Erscheint im Browser-Tab und für SEO
 style_id: contact
 layout: page_de
 titel: Kontakt
 ---
 
 <section class="content">
-  <h2>Kontakt</h2>
+  <h2>{{ page.titel }}</h2>
   <form class="" action="index.html" method="post">
     <label for="name">Name:</label>
     <input type="text" name="name" value="" placeholder="Max Mustermann" required>
@@ -29,8 +36,12 @@ titel: Kontakt
 
     <label class="gdpr_check" for="gdpr_check">
       <input type="checkbox" name="gdpr_check" id="gdpr_check" required>
-      <small>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Webseite und der Weiterleitung an meinen Servicedienstleister einverstanden.</small>
+      <small class="editable">Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Webseite und der Weiterleitung an meinen Servicedienstleister einverstanden.</small>
     </label>
+
+    <input type="hidden" name="_subject" value="Webseite Kontaktformular">
+    <input type="hidden" name="_to" value="mail@samuelboguslawski.com">
+    <input type="text" name="_gotcha" style="display: none;">
 
     <div class="formgroup">
       <input type="submit" name="senden" value="Absenden">

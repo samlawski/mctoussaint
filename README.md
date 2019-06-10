@@ -24,13 +24,12 @@
 
 ## To do:
 
-- Kontakt Seite mit Toggle für Buchungsdetails
-- Music page: Frontmatter list of soundcloud links, spotify playlists, iTunes? youTube?
-- clean up music page players
-
 - Cookie banner
-- Add fade transition for hamburger menu on mobile
+- signup domain
+- Contact form: update email address
+- Contact form: add Google Recaptcha
 - google Analytics
+- Add fade transition for hamburger menu on mobile
 
 ## Dev links
 
