@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang='de'>
+<html lang='en'>
   <head>
     <title>{% if page.titel %}{{ page.titel | escape }} | {% endif %}{{ site.titel | escape }}</title>
     <meta name="application-name" content="{{ site.titel }}"/>
-    <meta name="description" content="{% if page.seo_beschreibung %}{{ page.seo_beschreibung | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.beschreibung }}{% endif %}">
+    <meta name="description" content="{% if page.seo_beschreibung %}{{ page.seo_beschreibung | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.seite.seo_beschreibung }}{% endif %}">
 
     {% include head.html %}
   </head>
