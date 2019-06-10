@@ -24,7 +24,6 @@
 
 ## To do:
 
-- Cookie banner
 - signup domain
 - Contact form: update email address
 - Contact form: add Google Recaptcha
