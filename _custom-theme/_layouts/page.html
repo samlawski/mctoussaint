@@ -2,8 +2,8 @@
 <html lang='en'>
   <head>
     <title>{% if page.titel %}{{ page.titel | escape }} | {% endif %}{{ site.titel | escape }}</title>
-    <meta name="application-name" content="{{ site.titel }}"/>
-    <meta name="description" content="{% if page.seo_beschreibung %}{{ page.seo_beschreibung | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.seite.seo_beschreibung_englisch }}{% endif %}">
+    <meta name="application-name" content="{{ site.titel }}" />
+    <meta name="description" content="{% if page.seo_beschreibung %}{{ page.seo_beschreibung | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.seite.seo_beschreibung_englisch }}{% endif %}" />
 
     {% include head.html %}
   </head>
@@ -24,7 +24,7 @@
               <li><a class="editable" href="/">Home</a></li>
               <li><a class="editable" href="/music">Music</a></li>
               <li><a class="editable" href="/gallery">Gallery</a></li>
-              <li><a class="editable" href="/vita">Vita & References</a></li>
+              <li><a class="editable" href="/vita">ABOUT ME</a></li>
               <li><a class="editable" href="/contact">Contact</a></li>
               <li><a href="/">en</a> / <a href="/de">de</a></li>
             </ul>
@@ -34,8 +34,12 @@
       </nav>
 
       <header>
-        <h1 class="editable">Claire Saint</h1>
-        <h2 class="editable">singer - songwriter</h2>
+        <h1 class="editable">
+          Claire Saint
+        </h1>
+        <h2 class="editable">
+          singer - songwriter
+        </h2>
       </header>
 
       <main>
