@@ -24,8 +24,6 @@
 
 ## To do:
 
-- add contact cta on vita
-
 - signup domain
 - Contact form: update email address marie.toussaint@gmx.de
 - Contact form: add Google Recaptcha

@@ -116,6 +116,18 @@ textarea {
   }
 }
 
+.btn--dk {
+  border: 2px solid $clr-black;
+  border-radius: 2px;
+  color: $clr-black;
+  font-weight: $font-weight-bld;
+
+  &:hover {
+    border-color: $clr-primary--lt1;
+    color: $clr-primary--lt1;
+  }
+}
+
 [type="submit"],
 button {
   font-size: 14px;
