@@ -25,11 +25,10 @@
 ## To do:
 
 - auto-optimize images with imagemagick
-- fix dates on vita
 - add contact cta on vita
 
 - signup domain
-- Contact form: update email address
+- Contact form: update email address marie.toussaint@gmx.de
 - Contact form: add Google Recaptcha
 - google Analytics
 - Add fade transition for hamburger menu on mobile
