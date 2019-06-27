@@ -9,10 +9,12 @@ _comments:
 style_id: home
 layout: page_de
 titel: Home
+titel_image: '/media/uploads/image00024.jpeg'
 cta_link: "https://www.youtube.com/watch?v=VCKg_tbYjgs"
 ---
 
 <div class="media__slide">
-  <img src="/media/uploads/image00024.jpeg" class="img-centered editable" alt="">
+  {% assign file_name = page.titel_image | split: '/' | last %}
+  {% asset '{{ file_name }}' magick:resize=840 class="img-centered" %}
   <a href="{{ page.cta_link }}" target="_blank" class="slide__cta btn btn--lt editable">Jetzt anhören</a>
 </div>

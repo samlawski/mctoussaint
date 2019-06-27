@@ -14,7 +14,8 @@ titel: Galerie
 
   <div class="gallery">
     {% for img in site.data.galerie_bilder %}
-      <img src="{{ img.galerie_image }}" alt="gallery image {{ forloop.index }}">
+      {% assign file_name = img.galerie_image | split: '/' | last %}
+      {% asset '{{ file_name }}' magick:resize=520 %}
     {% endfor %}
   </div>
 </section>

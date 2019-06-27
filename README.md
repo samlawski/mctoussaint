@@ -24,7 +24,6 @@
 
 ## To do:
 
-- auto-optimize images with imagemagick
 - add contact cta on vita
 
 - signup domain

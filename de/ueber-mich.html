@@ -9,6 +9,7 @@ _comments:
 style_id: vita
 layout: page_de
 titel: Über mich
+portrait_image: "/media/uploads/dsc-4170.jpg"
 referenzen:
   - datum: '04.2010'
     titel: Backing Vocals für das Album ‚Mighty to Save’ von Neal Morse
@@ -46,7 +47,8 @@ referenzen:
 
   <div class="vita">
     <div class="vita__portrait">
-      <img alt="portrait" class="editable" src="/media/uploads/dsc-4170.jpg" width="400" />
+      {% assign file_name = page.portrait_image | split: '/' | last %}
+      {% asset '{{ file_name }}' magick:resize=600 alt="portrait" %}
     </div>
 
     <div class="vita__block">
