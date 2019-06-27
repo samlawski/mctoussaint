@@ -6,7 +6,7 @@
     }
   }
 
-  .vita__text {
+  .vita__block {
     flex: 1 1;
   }
 
@@ -23,6 +23,10 @@
         top: 15%;
       }
     }
+  }
+
+  .vita__text {
+    text-align: justify;
   }
 
   p {margin-bottom: 20px;}

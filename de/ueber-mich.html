@@ -46,11 +46,11 @@ referenzen:
 
   <div class="vita">
     <div class="vita__portrait">
-      <img alt="portrait_2" class="editable" src="/media/uploads/dsc-4170.jpg" width="400" />
+      <img alt="portrait" class="editable" src="/media/uploads/dsc-4170.jpg" width="400" />
     </div>
 
-    <div class="vita__text">
-      <div class="editable">
+    <div class="vita__block">
+      <div class="vita__text editable">
         <p>&bdquo;Musik ist mein Elixier&ldquo; ist nicht nur Hauptaussage der ersten Singleauskopplung von Claire Saints Album, es ist auch die Hauptaussage ihres Lebens.</p>
         <p>Als Marie-Claire Toussaint in Berlin geboren und aufgewachsen, hat sie schon fr&uuml;h viele verschiedene Arten der Kunst kennenlernen d&uuml;rfen, besonders die Musik. Neben einer umfangreichen Ausbildung innerhalb der Oberschulzeit (Chor, Dirigieren, Gesang, Musikleistungskurs), nahm sie Klavier-, Gitarren- und Gesangsunterricht. Sie war Teil von verschiedenen Bands und begann, eigene Songs innerhalb von Musikprojekten zu schreiben. 2009 ver&ouml;ffentlichte sie ihre erste EP &bdquo;Cover me&ldquo; mit vier englischsprachigen Songs, die heute noch auf SoundCloud zu finden ist.</p>
         <p>Der richtige Umbruch gelang ihr, als sie 2015 Florian Streso kennenlernte, der ebenfalls Musik machte. Sie hatte die Stimme und die Melodien, die er die ganze Zeit gesucht hat, er die Texte, die sie immer singen wollte. Aus dem Projekt &bdquo;Claireffendi&ldquo; sind wundersch&ouml;ne, selbst geschriebene und komponierte Songs entstanden, die auch teilweise auf Claire Saints Deb&uuml;talbum erscheinen werden.</p>
@@ -70,9 +70,9 @@ referenzen:
             <li>
               <strong>{{ referenz.datum }}</strong>:&nbsp;
               <span>{{ referenz.titel }}</span>&nbsp;
-              {% if referenz.audio_file %}
+              {% if referenz.audio_path %}
                 <span class="referenz__audio">
-                  <audio><source class="referenz__audio--{{ forloop.index }}" src="{{ referenz.audio_file }}" type="audio/mpeg" /></audio>
+                  <audio><source class="referenz__audio--{{ forloop.index }}" src="{{ referenz.audio_path }}" type="audio/mpeg" /></audio>
                   <i class="referenz__audio__btn far fa-play-circle"></i>
                 </span>
               {% endif %}

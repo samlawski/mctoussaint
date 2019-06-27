@@ -24,6 +24,10 @@
 
 ## To do:
 
+- auto-optimize images with imagemagick
+- fix dates on vita
+- add contact cta on vita
+
 - signup domain
 - Contact form: update email address
 - Contact form: add Google Recaptcha
