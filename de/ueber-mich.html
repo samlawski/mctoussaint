@@ -1,0 +1,86 @@
+---
+_options:
+  layout:
+    hidden: true
+  style_id:
+    hidden: true
+_comments:
+  titel: Erscheint im Browser-Tab und für SEO
+style_id: vita
+layout: page_de
+titel: Über mich
+referenzen:
+  - datum: 04.2010
+    titel: Backing Vocals für das Album ‚Mighty to Save’ von Neal Morse
+    audio_path:
+  - datum: 07.08.2012/03.09.2014
+    titel: Auftritte bei Firmenevents von Elpen Pharma
+    audio_path:
+  - datum: 29.08.2015/20.08.2016
+    titel: Hochzeitsgigs
+    audio_path:
+  - datum: '11.2016'
+    titel: Backing Vocals bei der Niederlande-Tour von Neal Morse
+    audio_path:
+  - datum: 24.11.2017
+    titel: Jingle Produktion für KISS FM Berlin
+    audio_path: /media/uploads/wisebuddah_jingles_-_kiss_fm_berlin_2018_montage__v2_.mp3
+  - datum: 07.08.2018
+    titel: Jingle Produktion für Planet Radio
+    audio_path:
+  - datum: 14./15. 09.2018
+    titel: Auftritt im Background-Chor beim Morsefest
+    audio_path:
+  - datum: 19.03.2019
+    titel: Jingle Produktion für KISS FM Canada
+    audio_path:
+  - datum: 28.05.2019
+    titel: Pitch Song Produktion
+    audio_path:
+---
+
+<section class="content">
+  <h2 class="editable">
+    <strong>Vita</strong>
+  </h2>
+
+  <div class="vita">
+    <div class="vita__portrait">
+      <img alt="portrait_2" class="editable" src="/media/uploads/dsc-4170.jpg" width="400" />
+    </div>
+
+    <div class="vita__text">
+      <div class="editable">
+        <p>&bdquo;Musik ist mein Elixier&ldquo; ist nicht nur Hauptaussage der ersten Singleauskopplung von Claire Saints Album, es ist auch die Hauptaussage ihres Lebens.</p>
+        <p>Als Marie-Claire Toussaint in Berlin geboren und aufgewachsen, hat sie schon fr&uuml;h viele verschiedene Arten der Kunst kennenlernen d&uuml;rfen, besonders die Musik. Neben einer umfangreichen Ausbildung innerhalb der Oberschulzeit (Chor, Dirigieren, Gesang, Musikleistungskurs), nahm sie Klavier-, Gitarren- und Gesangsunterricht. Sie war Teil von verschiedenen Bands und begann, eigene Songs innerhalb von Musikprojekten zu schreiben. 2009 ver&ouml;ffentlichte sie ihre erste EP &bdquo;Cover me&ldquo; mit vier englischsprachigen Songs, die heute noch auf SoundCloud zu finden ist.</p>
+        <p>Der richtige Umbruch gelang ihr, als sie 2015 Florian Streso kennenlernte, der ebenfalls Musik machte. Sie hatte die Stimme und die Melodien, die er die ganze Zeit gesucht hat, er die Texte, die sie immer singen wollte. Aus dem Projekt &bdquo;Claireffendi&ldquo; sind wundersch&ouml;ne, selbst geschriebene und komponierte Songs entstanden, die auch teilweise auf Claire Saints Deb&uuml;talbum erscheinen werden.</p>
+        <p>Das produziert sie aktuell, haupts&auml;chlich in Amerika in den Shuffle Brother Studios. Zusammen mit Gideon Klein und Gabriel Klein verleiht sie den tiefen und authentischen Texten einen unvergesslichen Klang, der zum Nachdenken und Tr&auml;umen anregt und eine ganz neue Art Popmusik erschafft.</p>
+        <p>Da Claire Saint nach dem Abitur 8 Monate in Nashville gelebt hat, konnte sie einen engen Bezug zu dem Land, den Leuten und der Sprache aufbauen. Das bewegte sie dazu, das Album in 2 EP&rsquo;s zu splitten, einen Teil mit 6 deutschen Songs und einen Teil mit 6 englischen Songs. Dies soll Claire Saints Leben zwischen und in diesen zwei Welten beschreiben, da sie auch in Zukunft in den USA und Deutschland leben will. Der Albumtitel zielt genau darauf ab und wird im Juli/August bekannt gegeben. Im Herbst wird das Album dann das Licht der Welt erblicken.</p>
+        <p>Erst mal steht eine kleinere Konzerttour in Deutschland (Leipzig, Berlin) und Amerika (Nashville) an, bevor Claire Saint eine gr&ouml;&szlig;ere Tour in Brasilien geplant hat, um dort mit einem lokalen K&uuml;nstler den brasilianischen Musikmarkt zu erobern. Daf&uuml;r lernt sie schon flei&szlig;ig portugiesisch.</p>
+        <p>Claire Saint hat viel B&uuml;hnenerfahrung durch zahlreiche Gesangs- und Chorauftritte in den unterschiedlichsten L&auml;ndern gesammelt (Ungarn, Estland, Italien, j&auml;hrliche Auftritte im Konzerthaus und in der Philharmonie Berlin). Wenn sie vor einem Publikum singen darf, f&uuml;hlt sie sich zu Hause. Auch auf Hochzeiten und bei Firmenevents ist sie aufgetreten und bietet dies auch weiterhin an (bei Interesse einfach das Kontaktformular ausf&uuml;llen).</p>
+      </div>
+
+      <div class="references">
+        <h3 class="editable">
+          Referenzen
+        </h3>
+
+        <ul>
+          {% for referenz in page.referenzen %}
+            <li>
+              <strong>{{ referenz.datum }}</strong>:&nbsp;
+              <span>{{ referenz.titel }}</span>&nbsp;
+              {% if referenz.audio_file %}
+                <span class="referenz__audio">
+                  <audio><source class="referenz__audio--{{ forloop.index }}" src="{{ referenz.audio_file }}" type="audio/mpeg" /></audio>
+                  <i class="referenz__audio__btn far fa-play-circle"></i>
+                </span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
