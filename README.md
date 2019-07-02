@@ -24,10 +24,7 @@
 
 ## To do:
 
-- signup domain
-- Contact form: update email address marie.toussaint@gmx.de
 - Contact form: add Google Recaptcha
-- google Analytics
 - Add fade transition for hamburger menu on mobile
 
 ## Dev links
