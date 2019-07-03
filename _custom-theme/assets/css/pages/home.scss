@@ -7,7 +7,13 @@
 [data-page="home"] {
   .media__slide {
     position: relative;
+    img {
+      max-height: 600px;
+      margin: auto;
+      display: block;
+    }
   }
+
   .slide__cta {
     position: absolute;
     left: 50%;
