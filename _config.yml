@@ -17,6 +17,7 @@ assets:
     - _custom-theme/assets
     - media/uploads
     - media/uploads/galerie
+    - uploads
   autoprefixer:
     browsers:
     - "last 3 versions"
