@@ -18,5 +18,5 @@ cta_link: https://youtu.be/ipc5VCE_riI
 <div class="media__slide">
   {% assign file_name = page.titel_image | split: '/' | last %}
   {% asset '{{ file_name }}' magick:resize=840 class="img-centered" %}
-  <a href="https://www.youtube.com/watch?v=MbjgkWknJq8" class="slide__cta btn btn--lt editable">View now</a>
+  <a href="{{ page.cta_link }}" class="slide__cta btn btn--lt">View now</a>
 </div>
